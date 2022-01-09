@@ -10,7 +10,7 @@ import logo from 'assets/images/logo.svg'
 
 function Sidebar(props) {
     return (
-        <aside className='w-60 pt-6 flex flex-col'>
+        <aside className='w-60 pt-6 flex flex-col flex-shrink-0'>
 
             <a href="" className="mb-7 px-6">
                 <img className="h-10" src={logo} alt=""/>

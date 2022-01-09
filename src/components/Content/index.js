@@ -2,25 +2,23 @@
 import {Navbar} from "components";
 
 //route
-import {Route, Routes} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 //pages
 import {Home, Search, Collection} from "pages";
 
 function Content() {
     return (
-        <main className='flex-auto'>
+        <main className='flex-auto px-8 overflow-auto'>
             <Navbar />
 
-            <Routes>
-                <Route path="/" element={<Home />} />
-            </Routes>
-            <Routes>
-                <Route path="/search" element={<Search />} />
-            </Routes>
-            <Routes>
-                <Route path="/collection" element={<Collection />} />
-            </Routes>
+            <div className="py-6">
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/search" component={Search} />
+                    <Route path="/collection" component={Collection} />
+                </Switch>
+            </div>
         </main>
     );
 }

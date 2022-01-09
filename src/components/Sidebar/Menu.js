@@ -9,7 +9,7 @@ function Menu(props) {
         <nav className="px-2">
             <ul className="flex flex-col">
                 <li>
-                    <NavLink to="/" className="nav-link">
+                    <NavLink exact to="/" className="nav-link">
                         <HomeIcon />
                         Home
                     </NavLink>

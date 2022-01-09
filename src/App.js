@@ -1,19 +1,19 @@
 import {Content, Footer, Sidebar} from "./components";
 import {
-    BrowserRouter
+    BrowserRouter as Router
 } from "react-router-dom";
 
 import {Home} from 'pages';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="wrapper">
           <Sidebar />
           <Content />
       </div>
         <Footer />
-    </BrowserRouter>
+    </Router>
   );
 }
 
